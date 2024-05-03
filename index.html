@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mason Mohler" />
+    <meta name="description" content="Roll Initiative Combat Tracker" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
+      rel="stylesheet"
+    />
+    <title>Roll Initiative</title>
+  </head>
+  <body class="container">
+    <header>
+      <h1>Roll Initiative</h1>
+    </header>
+    <main>
+      <section class="characterCards">
+        <div class="playerCard">
+          <h2>Player <span id="playerName"></span></h2>
+          <p>AC: <span id="playerAC"></span></p>
+          <p>HP: <span id="playerHP"></span></p>
+          <p>Initiative: <span id="playerInit"></span></p>
+          <p>Status Condition: <span id="playerStatusCon"></span></p>
+        </div>
+        <div class="enemyCard">
+          <h2>Enemy <span id="enemyName"></span></h2>
+          <p>AC: <span id="enemyAC"></span></p>
+          <p>HP: <span id="enemyHP"></span></p>
+          <p>Initiative: <span id="enemyInit"></span></p>
+          <p>Status Condition: <span id="enemyStatusCon"></span></p>
+        </div>
+      </section>
+      <section class="actionButtons">
+        <input
+          type="button"
+          value="Add New Player"
+          id="addNewPlayer"
+          onclick="addPlayer()"
+        />
+        <input
+          type="button"
+          value="Add New Enemy"
+          id="addNewEnemy"
+          onclick="addEnemy()"
+        />
+      </section>
+    </main>
+    <footer>
+      <h6>&copy; Mason Mohler | All Rights Reserved</h6>
+    </footer>
+  </body>
+</html>

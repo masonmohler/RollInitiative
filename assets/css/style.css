@@ -1,0 +1,43 @@
+/*  --------------- Box Sizing -----------------  */
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/*  --------------- Utility Classes -----------------  */
+
+.container {
+  width: 80vw;
+  max-width: 960px;
+  margin: 40px auto;
+}
+
+/*  --------------- Global Styling -----------------  */
+body {
+  font-family: "Jersey 15", sans-serif;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+}
+
+header {
+  text-align: center;
+  margin: auto;
+  font-size: 3rem;
+}
+
+main {
+}
+
+footer {
+  text-align: center;
+  font-size: 2rem;
+}
